@@ -10,6 +10,10 @@ public class ImportDiametr : MonoBehaviour
     public Text len;
     public Text a0;
     public Text v0;
+    public Text lenZam;
+    public Text a0Zam;
+    public Text v0Zam;
+    public Text diamZam;
     public bool IsTrue = false;
 
     // Update is called once per frame
@@ -24,6 +28,10 @@ public class ImportDiametr : MonoBehaviour
             len.text = (Convert.ToInt32(textt.text) * 5).ToString() + " μμ";
             a0.text =  string.Format("{0:0.##}", (Convert.ToInt32(textt.text) * (Convert.ToInt32(textt.text) * Math.PI)) / 4) + " κβ.μμ";
             v0.text = string.Format("{0:0.##}", Convert.ToDouble(a0.text.Remove(a0.text.Length - 6, 6)) * Convert.ToInt32(len.text.Remove(len.text.Length - 3,3)) + " κσα.μμ");
+            lenZam.text = (Convert.ToInt32(textt.text) * 5).ToString() + " μμ";
+            a0Zam.text = string.Format("{0:0.##}", (Convert.ToInt32(textt.text) * (Convert.ToInt32(textt.text) * Math.PI)) / 4) + " κβ.μμ";
+            v0Zam.text = string.Format("{0:0.##}", Convert.ToDouble(a0.text.Remove(a0.text.Length - 6, 6)) * Convert.ToInt32(len.text.Remove(len.text.Length - 3, 3)) + " κσα.μμ");
+            diamZam.text = Convert.ToInt32(textt.text).ToString() + " μμ";
         }
         else
         {
