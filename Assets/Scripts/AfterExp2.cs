@@ -67,10 +67,10 @@ public class AfterExp2 : MonoBehaviour
         l3Zam.text = string.Format("{0:0.##}", l3) + " μμ";
         l4Zam.text = string.Format("{0:0.##}", l4) + " μμ";
 
-        p1Zam.text = string.Format("{0:0.##}", p1) + " Ν/μμ^2";
-        p2Zam.text = string.Format("{0:0.##}", p2) + " Ν/μμ^2";
-        p3Zam.text = string.Format("{0:0.##}", p3) + " Ν/μμ^2";
-        p4Zam.text = string.Format("{0:0.##}", p4) + " Ν/μμ^2";
+        p1Zam.text = string.Format("{0:0.##}", p1) + " Ν";
+        p2Zam.text = string.Format("{0:0.##}", p2) + " Ν";
+        p3Zam.text = string.Format("{0:0.##}", p3) + " Ν";
+        p4Zam.text = string.Format("{0:0.##}", p4) + " Ν";
 
         d0Zam.text = MyDiam.myDiam + " μμ";
         l0Zam.text = (Convert.ToInt32(MyDiam.myDiam) * 5).ToString() + " μμ";
