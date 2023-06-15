@@ -16,10 +16,10 @@ public class MachineDiagr : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        p1 = Convert.ToDouble(PlayerPrefs.GetString("p1").Remove(PlayerPrefs.GetString("p1").Length - 7, 7));
-        p2 = Convert.ToDouble(PlayerPrefs.GetString("p2").Remove(PlayerPrefs.GetString("p2").Length - 7, 7));
-        p3 = Convert.ToDouble(PlayerPrefs.GetString("p3").Remove(PlayerPrefs.GetString("p3").Length - 7, 7));
-        p4 = Convert.ToDouble(PlayerPrefs.GetString("p4").Remove(PlayerPrefs.GetString("p4").Length - 7, 7));
+        p1 = Convert.ToDouble(PlayerPrefs.GetString("p1").Remove(PlayerPrefs.GetString("p1").Length - 2, 2));
+        p2 = Convert.ToDouble(PlayerPrefs.GetString("p2").Remove(PlayerPrefs.GetString("p2").Length - 2, 2));
+        p3 = Convert.ToDouble(PlayerPrefs.GetString("p3").Remove(PlayerPrefs.GetString("p3").Length - 2, 2));
+        p4 = Convert.ToDouble(PlayerPrefs.GetString("p4").Remove(PlayerPrefs.GetString("p4").Length - 2, 2));
         
     }
 
